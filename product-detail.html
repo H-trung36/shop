@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail | Music Lover</title>
+  <link rel="icon" href="./img/logo.png">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reponsive.css">
+  <link rel="stylesheet" href="./font/fontawesome-free-6.4.0-web/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black border-bot fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/3K%20IMG/shop.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bg-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Product.html">SẢN PHẨM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TIN TỨC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">KHUYẾN MÃI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">LIÊN HỆ</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <a href="#" class="nav-link text-white me-3"><i class="fas fa-search"></i></a>
+              <a href="#" class="nav-link text-white me-3"><i class="fas fa-user"></i></a>
+              <a href="#" class="nav-link text-white"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Product Detail Main Content -->
+    <div class="container mt-5 mb-5" id="product-detail-container">
+      <div class="row">
+        <!-- Product Images -->
+        <div class="col-md-5">
+          <div class="main-product-image mb-3">
+            <img id="main-product-img" src="" alt="Product Image" class="img-fluid">
+          </div>
+          <div class="product-thumbnails d-flex justify-content-center" id="product-thumbnails">
+            <!-- Thumbnails will be loaded here -->
+          </div>
+        </div>
+        
+        <!-- Product Information -->
+        <div class="col-md-7">
+          <h1 id="product-name" class="product-title">Loading...</h1>
+          <p class="brand-name">Thương hiệu <span id="product-brand" class="text-primary">Loading...</span></p>
+          
+          <div class="price-section">
+            <h2 id="product-price" class="product-price">Loading...</h2>
+            <div class="warranty-badge">
+              <i class="fa-solid fa-shield"></i>
+              <span id="warranty-period">Bảo hành 24 tháng</span>
+            </div>
+          </div>
+          
+          <div class="buy-button mt-4">
+            <button class="btn btn-warning btn-lg px-5">
+              <i class="fa-solid fa-cart-shopping me-2"></i> MUA HÀNG
+            </button>
+          </div>
+          
+          <div class="product-specifications mt-4">
+            <h3>Thông số kỹ thuật</h3>
+            <ul id="product-specs" class="specs-list">
+              <!-- Specifications will be loaded here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product Description Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="product-description">
+            <h3>Mô tả sản phẩm</h3>
+            <div id="product-description" class="mt-3">
+              <!-- Product description will be loaded here -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Related Products Section -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <h3>Sản phẩm liên quan</h3>
+          <div class="row mt-3" id="related-products">
+            <!-- Related products will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section - Copy your footer HTML here directly instead of loading it -->
+    <footer class="bg-black text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 p-3">
+              <a href="#"><img src="images/3K%20IMG/3kshop.png" alt="" /></a>
+              <p class="pt-3">
+                West City, 28/43 Siêu đô thị, Trái Đất <br />0999 999 999
+              </p>
+            </div>
+            <div class="col-lg-3 p-3">
+              <p>Introduction</p>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Giới Thiệu Về MUSIC LOVER</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Thương Hiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Sản Phẩm</a>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="col-lg-3 p-3">
+              <p>Branch</p>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    >Lầu 1, Điện Korin của thần mèo Korin </a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"
+                    >Làng Aru, nhà thứ 2</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+  </div>
+
+  <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    // Hard-coded product data to avoid having to load from external JSON file
+    const productsData = {
+      "headphone": [
+        {
+          "id": "hd800s",
+          "name": "Sennheiser HD 800 S",
+          "brand": "SENNHEISER",
+          "price": 39999000,
+          "images": [
+            "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-1.jpg",
+            "./img/products/headphone/hd800s-2.jpg",
+            "./img/products/headphone/hd800s-3.jpg"
+          ],
+          "warranty": "24 tháng",
+          "specifications": [
+            "Tai nghe Over-ear cao cấp với thiết kế Open-back",
+            "Đi kèm 2 dây tháo rời đầu cắm 6.3mm và 4.4mm",
+            "Driver: 56mm Ring Radiator Dynamic",
+            "Trở kháng: 300 Ω",
+            "Độ nhạy: 102 dB (1 V)",
+            "Tần số đáp ứng: 4 Hz - 51,000 Hz",
+            "Trọng lượng: 330 g",
+            "Sản xuất tại Ireland"
+          ],
+          "description": "<p>HD 800 S là tai nghe flagship của Sennheiser, kế thừa những đặc tính của HD 800 và cải tiến hơn nữa về chi tiết âm thanh. Với công nghệ hấp thụ sóng âm độc quyền hạn chế hiện tượng cộng hưởng tần số cao, HD 800 S mang đến trải nghiệm nghe nhạc đỉnh cao.</p><p>Thiết kế open-back mang đến không gian âm thanh rộng mở, driver Ring Radiator 56mm độc quyền cho độ chi tiết cao và khả năng tái tạo dải tần số cực rộng từ 4Hz - 51kHz.</p>"
+        },
+        {
+          "id": "ie600",
+          "name": "Sennheiser IE 600",
+          "brand": "SENNHEISER",
+          "price": 16990000,
+          "images": [
+            "./img/products/headphone/ie600-1.jpg",
+            "./img/products/headphone/ie600-2.jpg"
+          ],
+          "warranty": "24 tháng",
+          "specifications": [
+            "Tai nghe In-ear Monitor cao cấp",
+            "Driver: 7mm True Response Transducer Dynamic",
+            "Trở kháng: 18 Ω",
+            "Độ nhạy: 118 dB (1 kHz, 1 Vrms)",
+            "Tần số đáp ứng: 4 Hz - 46,500 Hz",
+            "Trọng lượng: 6 g (không dây)",
+            "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
+            "Vỏ kim loại AMORF ZR01 in 3D"
+          ]
+        }
+      ],
+      "dap": [
+        {
+          "id": "sp2000t",
+          "name": "Astell&Kern SP2000T",
+          "brand": "ASTELL&KERN",
+          "price": 57990000,
+          "images": [
+            "./img/products/dap/sp2000t-1.jpg",
+            "./img/products/dap/sp2000t-2.jpg",
+            "./img/products/dap/sp2000t-3.jpg"
+          ],
+          "warranty": "12 tháng",
+          "specifications": [
+            "Màn hình cảm ứng 5.0 inch HD",
+            "Chip DAC: ESS ES9068AS Quad",
+            "Âm ly headphone: Dual Amp (Class A & Tube)",
+            "Bộ nhớ trong: 256GB (mở rộng microSD tới 1TB)",
+            "Pin: 4,200mAh, phát nhạc liên tục đến 9 giờ",
+            "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD)",
+            "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
+            "Công suất đầu ra: 6Vrms (balanced), 3Vrms (unbalanced)",
+            "Trọng lượng: 309g"
+          ]
+        },
+        {
+          "id": "m11plus",
+          "name": "FiiO M11 Plus",
+          "brand": "FIIO",
+          "price": 17990000,
+          "images": [
+            "./img/products/dap/m11plus-1.jpg",
+            "./img/products/dap/m11plus-2.jpg"
+          ],
+          "warranty": "12 tháng",
+          "specifications": [
+            "Màn hình cảm ứng 5.5 inch HD",
+            "Chip DAC: ESS ES9068AS",
+            "Hệ điều hành: Android 10",
+            "Bộ nhớ trong: 64GB (mở rộng microSD tới 2TB)",
+            "Pin: 6000mAh, phát nhạc liên tục đến 14 giờ",
+            "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
+            "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
+            "Trọng lượng: 286g"
+          ]
+        }
+      ],
+      "cable": [
+        {
+          "id": "sw22",
+          "name": "Effect Audio Symphony Wire 22",
+          "brand": "EFFECT AUDIO",
+          "price": 8990000,
+          "images": [
+            "./img/products/cable/sw22-1.jpg",
+            "./img/products/cable/sw22-2.jpg"
+          ],
+          "warranty": "12 tháng",
+          "specifications": [
+            "Cáp nâng cấp cho tai nghe In-ear Monitor",
+            "Chất liệu: Silver-Gold Alloy (UP-OCC)",
+            "Cấu trúc: 24AWG, 4-wire",
+            "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+            "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+            "Chiều dài: 1.2m"
+          ]
+        }
+      ]
+    };
+
+    // Function to get URL parameters
+    function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    // Load product details when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+      loadProductDetails();
+    });
+
+    // Function to load product details
+    function loadProductDetails() {
+      const productId = getURLParameter('id');
+      const category = getURLParameter('category');
+      
+      if (!productId) {
+        document.getElementById('product-detail-container').innerHTML = '<div class="alert alert-danger">Product not found</div>';
+        return;
+      }
+      
+      // Find the product with the matching id
+      let product = null;
+      
+      // Look through all categories if category not specified
+      if (category && productsData[category]) {
+        const categoryProducts = productsData[category] || [];
+        product = categoryProducts.find(p => p.id === productId);
+      } else {
+        // Search in all categories
+        for (const cat in productsData) {
+          const foundProduct = productsData[cat].find(p => p.id === productId);
+          if (foundProduct) {
+            product = foundProduct;
+            break;
+          }
+        }
+      }
+      
+      if (product) {
+        renderProductDetails(product);
+        renderRelatedProducts(product, category || getProductCategory(product));
+      } else {
+        document.getElementById('product-detail-container').innerHTML = '<div class="alert alert-danger">Product not found</div>';
+      }
+    }
+
+    // Find which category a product belongs to
+    function getProductCategory(product) {
+      for (const category in productsData) {
+        if (productsData[category].some(p => p.id === product.id)) {
+          return category;
+        }
+      }
+      return null;
+    }
+
+    // Render product details on the page
+    function renderProductDetails(product) {
+      document.title = `${product.name} | Music Lover`;
+      
+      // Set main product image
+      const mainImg = document.getElementById('main-product-img');
+      if (product.images && product.images.length > 0) {
+        mainImg.src = product.images[0];
+      } else if (product.image) {
+        mainImg.src = product.image;
+      } else {
+        mainImg.src = './img/placeholder.jpg';
+      }
+      mainImg.alt = product.name;
+      
+      // Set product details
+      document.getElementById('product-name').textContent = product.name;
+      document.getElementById('product-brand').textContent = product.brand;
+      document.getElementById('product-price').textContent = formatPrice(product.price) + 'đ';
+      
+      // Set warranty if available
+      if (product.warranty) {
+        document.getElementById('warranty-period').textContent = `Bảo hành ${product.warranty}`;
+      }
+      
+      // Render thumbnails if multiple images exist
+      const thumbnailsContainer = document.getElementById('product-thumbnails');
+      thumbnailsContainer.innerHTML = '';
+      
+      if (product.images && product.images.length > 0) {
+        product.images.forEach(img => {
+          const thumbnail = document.createElement('div');
+          thumbnail.className = 'thumbnail-item mx-2';
+          thumbnail.innerHTML = `<img src="${img}" alt="${product.name}" class="img-fluid" onclick="updateMainImage('${img}')">`;
+          thumbnailsContainer.appendChild(thumbnail);
+        });
+      } else if (product.image) {
+        const thumbnail = document.createElement('div');
+        thumbnail.className = 'thumbnail-item mx-2';
+        thumbnail.innerHTML = `<img src="${product.image}" alt="${product.name}" class="img-fluid">`;
+        thumbnailsContainer.appendChild(thumbnail);
+      }
+      
+      // Render specifications
+      const specsList = document.getElementById('product-specs');
+      specsList.innerHTML = '';
+      
+      if (product.specifications && product.specifications.length > 0) {
+        product.specifications.forEach(spec => {
+          const li = document.createElement('li');
+          li.textContent = spec;
+          specsList.appendChild(li);
+        });
+      } else {
+        // Fallback for your current data structure
+        if (product.type) specsList.innerHTML += `<li>Loại: ${product.type}</li>`;
+        if (product.driver) specsList.innerHTML += `<li>Driver: ${product.driver}</li>`;
+        if (product.impedance) specsList.innerHTML += `<li>Trở kháng: ${product.impedance}</li>`;
+        if (product.sensitivity) specsList.innerHTML += `<li>Độ nhạy: ${product.sensitivity}</li>`;
+        if (product.frequencyResponse) specsList.innerHTML += `<li>Tần số đáp ứng: ${product.frequencyResponse}</li>`;
+        if (product.weight) specsList.innerHTML += `<li>Trọng lượng: ${product.weight}</li>`;
+        if (product.origin) specsList.innerHTML += `<li>Sản xuất tại: ${product.origin}</li>`;
+      }
+      
+      // Render description
+      if (product.description) {
+        document.getElementById('product-description').innerHTML = product.description;
+      } else {
+        document.getElementById('product-description').innerHTML = `<p>Đang cập nhật mô tả cho ${product.name}...</p>`;
+      }
+    }
+
+    // Render related products
+    function renderRelatedProducts(currentProduct, category) {
+      const relatedContainer = document.getElementById('related-products');
+      relatedContainer.innerHTML = '';
+      
+      if (!category || !productsData[category]) return;
+      
+      // Get up to 4 related products from the same category
+      const related = productsData[category]
+        .filter(p => p.id !== currentProduct.id)
+        .slice(0, 4);
+      
+      related.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'col-md-3 col-6 mb-4';
+        
+        const productImage = product.images && product.images.length > 0 
+          ? product.images[0] 
+          : (product.image || './img/placeholder.jpg');
+        
+        productCard.innerHTML = `
+          <div class="product-card">
+            <div class="product-image">
+              <img src="${productImage}" alt="${product.name}" class="img-fluid">
+              <div class="product-overlay">
+                <a href="product-detail.html?id=${product.id}&category=${category}" class="view-btn">
+                  <i class="fa-solid fa-eye"></i>
+                </a>
+              </div>
+            </div>
+            <div class="product-info">
+              <h5 class="product-title">${product.name}</h5>
+              <p class="product-price">${formatPrice(product.price)}đ</p>
+            </div>
+          </div>
+        `;
+        relatedContainer.appendChild(productCard);
+      });
+    }
+
+    // Update main image when clicking on thumbnails
+    function updateMainImage(imageSrc) {
+      document.getElementById('main-product-img').src = imageSrc;
+    }
+
+    // Format price with commas
+    function formatPrice(price) {
+      return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+  </script>
+</body>
+
+</html>

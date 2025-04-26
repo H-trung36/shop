@@ -1,47 +1,115 @@
-[
-    {
-      "id": "HD800",
-      "name": "Sennheiser HD 800 S",
-      "brand": "Sennheiser",
-      "price": "39,999,000đ",
-      "images": [
-        "images/3K IMG/HD800_1.jpg",
-        "images/3K IMG/HD800_2.jpg",
-        "images/3K IMG/HD800_3.jpg"
-      ],
-      "mainImage": "images/3K IMG/HD800_1.jpg",
-      "warranty": "Bảo hành 24 tháng",
-      "description": [
-        "Tai nghe Over-ear cao cấp với thiết kế Open-back",
-        "Đi kèm 2 dây tháo rời dài 3m với đầu cắm 6.3mm và 4.4mm",
-        "Driver: 56mm Ring Radiator Dynamic",
-        "Trở kháng: 300 Ω",
-        "Độ nhạy: 102 dB (1 V)",
-        "Tần số đáp ứng: 4 Hz – 51,000 Hz",
-        "Trọng lượng: 330 g",
-        "Sản xuất tại Ireland"
-      ]
-    },
-    {
-      "id": "IE600",
-      "name": "Sennheiser IE600",
-      "brand": "Sennheiser",
-      "price": "20,000,000đ",
-      "images": [
-        "images/3K IMG/IE600_1.jpg",
-        "images/3K IMG/IE600_2.jpg",
-        "images/3K IMG/IE600_3.jpg"
-      ],
-      "mainImage": "images/3K IMG/IE600_1.jpg",
-      "warranty": "Bảo hành 12 tháng",
-      "description": [
-        "Tai nghe In-ear cao cấp",
-        "Driver: 7mm TrueResponse",
-        "Trở kháng: 20 Ω",
-        "Độ nhạy: 118 dB (1 V)",
-        "Tần số đáp ứng: 6 Hz – 20,000 Hz",
-        "Trọng lượng: 15 g",
-        "Sản xuất tại Đức"
-      ]
-    }
-  ]
+{
+    "headphone": [
+      {
+        "id": "hd800s",
+        "name": "Sennheiser HD 800 S",
+        "brand": "SENNHEISER",
+        "price": 39999000,
+        "images": [
+          "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-1.jpg",
+          "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-2.jpg",
+          "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-3.jpg",
+        ],
+        "warranty": "24 tháng",
+        "specifications": [
+          "Tai nghe Over-ear cao cấp với thiết kế Open-back",
+          "Đi kèm 2 dây tháo rời đầu cắm 6.3mm và 4.4mm",
+          "Driver: 56mm Ring Radiator Dynamic",
+          "Trở kháng: 300 Ω",
+          "Độ nhạy: 102 dB (1 V)",
+          "Tần số đáp ứng: 4 Hz - 51,000 Hz",
+          "Trọng lượng: 330 g",
+          "Sản xuất tại Ireland"
+        ],
+        "description": "<p>HD 800 S là tai nghe flagship của Sennheiser, kế thừa những đặc tính của HD 800 và cải tiến hơn nữa về chi tiết âm thanh. Với công nghệ hấp thụ sóng âm độc quyền hạn chế hiện tượng cộng hưởng tần số cao, HD 800 S mang đến trải nghiệm nghe nhạc đỉnh cao.</p><p>Thiết kế open-back mang đến không gian âm thanh rộng mở, driver Ring Radiator 56mm độc quyền cho độ chi tiết cao và khả năng tái tạo dải tần số cực rộng từ 4Hz - 51kHz.</p>"
+      },
+      {
+        "id": "ie600",
+        "name": "Sennheiser IE 600",
+        "brand": "SENNHEISER",
+        "price": 16990000,
+        "images": [
+          "./img/products/headphone/ie600-1.jpg",
+          "./img/products/headphone/ie600-2.jpg"
+        ],
+        "warranty": "24 tháng",
+        "specifications": [
+          "Tai nghe In-ear Monitor cao cấp",
+          "Driver: 7mm True Response Transducer Dynamic",
+          "Trở kháng: 18 Ω",
+          "Độ nhạy: 118 dB (1 kHz, 1 Vrms)",
+          "Tần số đáp ứng: 4 Hz - 46,500 Hz",
+          "Trọng lượng: 6 g (không dây)",
+          "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
+          "Vỏ kim loại AMORF ZR01 in 3D"
+        ]
+      }
+    ],
+    "dap": [
+      {
+        "id": "sp2000t",
+        "name": "Astell&Kern SP2000T",
+        "brand": "ASTELL&KERN",
+        "price": 57990000,
+        "images": [
+          "./img/products/dap/sp2000t-1.jpg",
+          "./img/products/dap/sp2000t-2.jpg",
+          "./img/products/dap/sp2000t-3.jpg"
+        ],
+        "warranty": "12 tháng",
+        "specifications": [
+          "Màn hình cảm ứng 5.0 inch HD",
+          "Chip DAC: ESS ES9068AS Quad",
+          "Âm ly headphone: Dual Amp (Class A & Tube)",
+          "Bộ nhớ trong: 256GB (mở rộng microSD tới 1TB)",
+          "Pin: 4,200mAh, phát nhạc liên tục đến 9 giờ",
+          "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD)",
+          "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
+          "Công suất đầu ra: 6Vrms (balanced), 3Vrms (unbalanced)",
+          "Trọng lượng: 309g"
+        ]
+      },
+      {
+        "id": "m11plus",
+        "name": "FiiO M11 Plus",
+        "brand": "FIIO",
+        "price": 17990000,
+        "images": [
+          "./img/products/dap/m11plus-1.jpg",
+          "./img/products/dap/m11plus-2.jpg"
+        ],
+        "warranty": "12 tháng",
+        "specifications": [
+          "Màn hình cảm ứng 5.5 inch HD",
+          "Chip DAC: ESS ES9068AS",
+          "Hệ điều hành: Android 10",
+          "Bộ nhớ trong: 64GB (mở rộng microSD tới 2TB)",
+          "Pin: 6000mAh, phát nhạc liên tục đến 14 giờ",
+          "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
+          "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
+          "Trọng lượng: 286g"
+        ]
+      }
+    ],
+    "cable": [
+      {
+        "id": "sw22",
+        "name": "Effect Audio Symphony Wire 22",
+        "brand": "EFFECT AUDIO",
+        "price": 8990000,
+        "images": [
+          "./img/products/cable/sw22-1.jpg",
+          "./img/products/cable/sw22-2.jpg"
+        ],
+        "warranty": "12 tháng",
+        "specifications": [
+          "Cáp nâng cấp cho tai nghe In-ear Monitor",
+          "Chất liệu: Silver-Gold Alloy (UP-OCC)",
+          "Cấu trúc: 24AWG, 4-wire",
+          "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+          "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+          "Chiều dài: 1.2m"
+        ]
+      }
+    ]
+  }
