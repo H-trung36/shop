@@ -1,0 +1,47 @@
+[
+    {
+      "id": "HD800",
+      "name": "Sennheiser HD 800 S",
+      "brand": "Sennheiser",
+      "price": "39,999,000đ",
+      "images": [
+        "images/3K IMG/HD800_1.jpg",
+        "images/3K IMG/HD800_2.jpg",
+        "images/3K IMG/HD800_3.jpg"
+      ],
+      "mainImage": "images/3K IMG/HD800_1.jpg",
+      "warranty": "Bảo hành 24 tháng",
+      "description": [
+        "Tai nghe Over-ear cao cấp với thiết kế Open-back",
+        "Đi kèm 2 dây tháo rời dài 3m với đầu cắm 6.3mm và 4.4mm",
+        "Driver: 56mm Ring Radiator Dynamic",
+        "Trở kháng: 300 Ω",
+        "Độ nhạy: 102 dB (1 V)",
+        "Tần số đáp ứng: 4 Hz – 51,000 Hz",
+        "Trọng lượng: 330 g",
+        "Sản xuất tại Ireland"
+      ]
+    },
+    {
+      "id": "IE600",
+      "name": "Sennheiser IE600",
+      "brand": "Sennheiser",
+      "price": "20,000,000đ",
+      "images": [
+        "images/3K IMG/IE600_1.jpg",
+        "images/3K IMG/IE600_2.jpg",
+        "images/3K IMG/IE600_3.jpg"
+      ],
+      "mainImage": "images/3K IMG/IE600_1.jpg",
+      "warranty": "Bảo hành 12 tháng",
+      "description": [
+        "Tai nghe In-ear cao cấp",
+        "Driver: 7mm TrueResponse",
+        "Trở kháng: 20 Ω",
+        "Độ nhạy: 118 dB (1 V)",
+        "Tần số đáp ứng: 6 Hz – 20,000 Hz",
+        "Trọng lượng: 15 g",
+        "Sản xuất tại Đức"
+      ]
+    }
+  ]
