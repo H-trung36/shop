@@ -208,7 +208,12 @@ body {
 	font-size: 1.2rem;
 	font-weight: bold;
   }
-  
+  .product-price-in-detail {
+	background-color: #ffffff;
+	color: rgb(0, 0, 0);
+	font-size: 3rem;
+	font-weight:bolder
+  }
   /* Responsive adjustments */
   @media (max-width: 767px) {
 	.product-section h1 {
