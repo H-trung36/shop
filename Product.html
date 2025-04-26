@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- InstanceBeginEditable name="doctitle" -->
-    <title>3K Shop</title>
+    <title>Music Lover</title>
     <!-- InstanceEndEditable -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Product.html">SẢN PHẨM</a>
+              <a class="nav-link active" aria-current="page" href="#">SẢN PHẨM</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">TIN TỨC</a>
@@ -62,107 +62,31 @@
     <!--xong phần header-->
     <!-- InstanceBeginEditable name="EditRegion1" -->
     <main>
-      <section id="banner">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 banner-l">
-              <div
-                id="carouselExampleCaptions"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="images\3K IMG\Banner pic3.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Khuyến mãi mùa hè</h5>
-                      <p>Giảm giá 20% cho tất cả các hóa đơn thanh toán.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="images\3K IMG\Banner pic.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Khuyến mãi Cho Combo</h5>
-                      <p>Giảm Giá Cho Góc Setup mới</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="images\3K IMG\Banner pic2.jpg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Big Promotion</h5>
-                      <p>Giảm 20% Cho Chi Nhánh Mới Khai Trương</p>
-                    </div>
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="prev"
-                >
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleCaptions"
-                  data-bs-slide="next"
-                >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
+      <section id="product-banner">
+        <img src="images/3K IMG/Banner pic3.jpg" alt="Product Banner" class="non-moving-img" />
+      </section>
+      <section id="category-nav" class="py-3">
+        <div class="container">
+          <div class="d-flex justify-content-start gap-3 flex-wrap">
+            <a href="#hifiman" class="btn btn-outline-dark category-btn active">HEADPHONE</a>
+            <a href="#dac-amp" class="btn btn-outline-dark category-btn">DAC/AMP</a>
+            <a href="#dap" class="btn btn-outline-dark category-btn">DAP</a>
+            <a href="#day-thay" class="btn btn-outline-dark category-btn">DÂY THAY</a>
+            <a href="#kid" class="btn btn-outline-dark category-btn">PHỤ KIỆN</a>
           </div>
         </div>
       </section>
-
       <section id="Headphone">
         <div class="container py-4">
           <div class="d-flex justify-content-between align-items-center mb-4">
-            <h1>SẢN PHẨM MỚI</h1>
-            <a href="product.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
+            <h1>HEADPHONE</h1>
+            <a href="Headphone.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
           </div>
           <p><i>Find The Best Headphone For Creator.</i></p>
           <div class="owl-carousel owl-theme" id="sp-headphone">
             <div class="item">
               <div class="hinh">
-                <img src="images/3K IMG/HEADPHONE/SONY/MDR Z1R.jpg" alt="" />
+                <img src="images/3K IMG/HEADPHONE/SONY/Z1R.jpg" alt="" />
                 <div class="social">
                   <a href="#"><i class="fas fa-eye"></i></a>
                   <a href="#"><i class="fas fa-star"></i></a>
@@ -170,18 +94,18 @@
                 </div>
               </div>
               <p class="d-flex justify-content-between">
-                <b>SONY MDR Z1R</b>
+                <b>SONY IER-Z1R</b>
                 <b
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i
                 ></b>
               </p>
-              <p class ="product-price">6.000.000VNĐ</p>
+              <p class ="product-price">32.400.000vnđ</p>
             </div>
             <div class="item">
               <div class="hinh">
-                <img src="images/3K IMG/Dap/AK/2000.jpg" alt="" />
+                <img src="images/3K IMG/HEADPHONE/Sennheiser/HD800.jpg" alt="" />
                 <div class="social">
                   <a href="#"><i class="fas fa-eye"></i></a>
                   <a href="#"><i class="fas fa-star"></i></a>
@@ -189,18 +113,18 @@
                 </div>
               </div>
               <p class="d-flex justify-content-between">
-                <b>ASTELL&KERN SP2000</b>
+                <b>Sennheiser HD800</b>
                 <b
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i
                 ></b>
               </p>
-              <p class ="product-price">10.000.000VNĐ</p>
+              <p class ="product-price">1.200.000vnđ</p>
             </div>
             <div class="item">
               <div class="hinh">
-                <img src="images/3K IMG/Cables/Brise/Yatono.webp" alt="" />
+                <img src="images/3K IMG/HEADPHONE/Sennheiser/IE600.jpg" alt="" />
                 <div class="social">
                   <a href="#"><i class="fas fa-eye"></i></a>
                   <a href="#"><i class="fas fa-star"></i></a>
@@ -208,18 +132,18 @@
                 </div>
               </div>
               <p class="d-flex justify-content-between">
-                <b>BRISE AUDIO YATONO</b>
+                <b>Sennheiser IE600</b>
                 <b class="text-warning"
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star-half"></i
                 ></b>
               </p>
-              <p class ="product-price">12.000.000VNĐ</p>
+              <p class ="product-price">899.000vnđ</p>
             </div>
             <div class="item">
               <div class="hinh">
-                <img src="images/3K IMG/Cables/Brise/Asuha.jpg" alt="" />
+                <img src="images/3K IMG/Head 4.jpeg" alt="" />
                 <div class="social">
                   <a href="#"><i class="fas fa-eye"></i></a>
                   <a href="#"><i class="fas fa-star"></i></a>
@@ -227,120 +151,374 @@
                 </div>
               </div>
               <p class="d-flex justify-content-between">
-                <b>BRISE AUDIO ASUHA</b>
+                <b>AMT Sport</b>
                 <b
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i><i class="fas fa-star"></i
                   ><i class="fas fa-star"></i
                 ></b>
               </p>
-              <p class ="product-price">11.000.000VNĐ</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="Hot-Headphone">
-        <div class="container py-4">
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h1>SẢN PHẨM HOT</h1>
-            <a href="product.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
-          </div>
-          <p><i>Find The Best Headphone For Creator.</i></p>
-          <div class="owl-carousel owl-theme" id="sp-hot-headphone">
-            <div class="item">
-              <div class="hinh">
-                <img src="images/3K IMG/Cables/Wagnus/Nu3.avif" alt="" />
-                <div class="social">
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-star"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-              </div>
-              <p class="d-flex justify-content-between">
-                <b>WAGNUS SHEEP NU-3</b>
-                <b
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i
-                ></b>
-              </p>
-              <p class ="product-price">12.000.000VNĐ</p>
-            </div>
-            <div class="item">
-              <div class="hinh">
-                <img src="images/3K IMG/Dap/SONY/2Z.jpeg" alt="" />
-                <div class="social">
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-star"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-              </div>
-              <p class="d-flex justify-content-between">
-                <b>SONY WM1ZMK2</b>
-                <b
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i
-                ></b>
-              </p>
-              <p class ="product-price">10.000.000VNĐ</p>
-            </div>
-            <div class="item">
-              <div class="hinh">
-                <img src="images/3K IMG/Cables/Brise/Yatono.webp" alt="" />
-                <div class="social">
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-star"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-              </div>
-              <p class="d-flex justify-content-between">
-                <b>BRISE AUDIO YATONO</b>
-                <b class="text-warning"
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star-half"></i
-                ></b>
-              </p>
-              <p class ="product-price">12.000.000VNĐ</p>
-            </div>
-            <div class="item">
-              <div class="hinh">
-                <img src="images/3K IMG/Cables/Brise/Asuha.jpg" alt="" />
-                <div class="social">
-                  <a href="#"><i class="fas fa-eye"></i></a>
-                  <a href="#"><i class="fas fa-star"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                </div>
-              </div>
-              <p class="d-flex justify-content-between">
-                <b>BRISE AUDIO ASUHA</b>
-                <b
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i
-                ></b>
-              </p>
-              <p class ="product-price">11.000.000VNĐ</p>
+              <p class ="product-price">$180</p>
             </div>
           </div>
         </div>
       </section>
       
+      <section id="kid">
+        <div class="container py-4">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1>ACCESSORY</h1>
+            <a href="Accessory.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
+          </div>
+          <p><i> Find The Best Accessory For Creator.</i></p>
+          <div class="owl-carousel owl-theme" id="sp-acess">
+            <div class="item">
+              <div class="hinh">
+                <img src="images/3K IMG/acces 1.jpeg" alt="" />
+                <div class="social">
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between">
+                <b>Phone Gear</b>
+                <b
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></b>
+              </p>
+              <p class ="product-price">$60</p>
+            </div>
+            <div class="item">
+              <div class="hinh">
+                <img src="images/3K IMG/acces 2.jpeg" alt="" />
+                <div class="social">
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between">
+                <b>In Ear</b>
+                <b
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></b>
+              </p>
+              <p class ="product-price">$30</p>
+            </div>
+            <div class="item">
+              <div class="hinh">
+                <img src="images/3K IMG/acces 3.jpeg" alt="" />
+                <div class="social">
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between">
+                <b>3.5 Jack</b>
+                <b class="text-warning"
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star-half"></i
+                ></b>
+              </p>
+              <p class ="product-price">$60</p>
+            </div>
+            <div class="item">
+              <div class="hinh">
+                <img src="images/3K IMG/acces 4.jpeg" alt="" />
+                <div class="social">
+                  <a href="#"><i class="fas fa-eye"></i></a>
+                  <a href="#"><i class="fas fa-star"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+              <p class="d-flex justify-content-between">
+                <b>Adapter</b>
+                <b
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i
+                ></b>
+              </p>
+              <p class ="product-price">$20</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Thêm sau section Accessory -->
+<section id="dap">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>DAP</h1>
+      <a href="Dap.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
+    </div>
+    <p><i>Digital Audio Players for audiophiles.</i></p>
+    <div class="owl-carousel owl-theme" id="sp-dap">
+      <!-- Product 1 -->
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dap/FIIO/M11 PRO SS.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Fiio M11S</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">17.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dap/SONY/1Z.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Sony WM1Z</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">14.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dap/AK/1000SS.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Astell&Kern SP1000SS</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">32.000.000vnđ</p>
+      </div>
+      <!-- Thêm các sản phẩm DAP khác tương tự -->
+    </div>
+  </div>
+</section>
+
+<section id="dac-amp">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>DAC/AMP</h1>
+      <a href="product.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
+    </div>
+    <p><i>High-quality DAC and Amplifier combos.</i></p>
+    <div class="owl-carousel owl-theme" id="sp-dac-amp">
+      <!-- Product 1 -->
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dac1.png" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Ferrum erco 2</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">10.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dac2.png" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>iFi xDSD Gryphon</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">7.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dac3.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>IFI gold bar</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">6.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Dac4.jpeg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Chord Ultima 5</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">29.000.000vnđ</p>
+      </div>
+      <!-- Thêm các sản phẩm DAC/AMP khác tương tự -->
+    </div>
+  </div>
+</section>
+
+<section id="day-thay">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>CABLES</h1>
+      <a href="Cables.html" class="btn btn-outline-light see-all-btn">SEE ALL</a>
+    </div>
+    <p><i>Premium replacement cables.</i></p>
+    <div class="owl-carousel owl-theme" id="sp-cables">
+      <!-- Product 1 -->
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Cables1.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Brise Audio ASUHA-REF2</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">15.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Cables2.avif" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Wagnus Zillion Sheep NU-2</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">5.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Cables3.webp" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Eletech Odyssey</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">10.000.000vnđ</p>
+      </div>
+      <div class="item">
+        <div class="hinh">
+          <img src="images/3K IMG/Cables4.jpg" alt="" />
+          <div class="social">
+            <a href="#"><i class="fas fa-eye"></i></a>
+            <a href="#"><i class="fas fa-star"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <p class="d-flex justify-content-between">
+          <b>Brise Audio STR7</b>
+          <b class="text-warning"
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half"></i
+          ></b>
+        </p>
+        <p class ="product-price">8.000.000vnđ</p>
+      </div>
+      <!-- Thêm các sản phẩm Cable khác tương tự -->
+    </div>
+  </div>
+</section>
       <section id="explorer">
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-xl-6 mb-3">
-              <h1 class="text-White">Chào mừng đến với Music Lover</h1>
+              <h1 class="text-White">Explore Our Products</h1>
               <p>
-                chúng tôi không chỉ bán thiết bị, chúng tôi sẽ giúp các bạn để các bạn cũng có thể thưởng thức những điều tuyệt vời mà âm nhạc mang lại.
-                <br />
+                chào mừng bạn vì đã ghé thăm music lover.
+              </p>
+              <p>
+                Yêu âm nhạc.
+              </p>
+              <p>
                 <i
-                  > Và chúng ta sẽ cùng nhau thưởng thức những bản nhạc tuyệt vời nhất, với những bản phối mang màu sắc của riêng chúng,epic,pop,Noir Jazz,...</i
+                  >những thiết bị giúp chúng ta tiến gần đến với bản chất thuần tuý của âm nhạc.</i
                 >
               </p>
-              <button href ="Contact.html" type="button" class="btn btn-light">
+              <button type="button" class="btn btn-light">
                 DISCOVERY MORE
               </button>
             </div>
@@ -348,8 +526,8 @@
               <div class="row">
                 <div class="col-lg-6 mb-3">
                   <div class="content">
-                    <h3>IEM that I love the most</h3>
-                    <p><i>SONY IER-Z1R</i></p>
+                    <h3>Fullsize Headphone</h3>
+                    <p><i>Airpod Max</i></p>
                   </div>
                 </div>
                 <div class="col-lg-6 mb-3">
@@ -363,15 +541,15 @@
               <div class="row">
                 <div class="col-lg-6 mb-3">
                   <img
-                    src="images/3K IMG/Sony sieu vip.jpg"
+                    src="images/3K IMG/dis 2.jpeg"
                     alt=""
                     class="img-fluid"
                   />
                 </div>
                 <div class="col-lg-6 mb-3">
                   <div class="content">
-                    <h3>SONY WM1Z</h3>
-                    <p><i> Best DAP ever!</i></p>
+                    <h3>Marshall Speaker</h3>
+                    <p><i> Best Choices</i></p>
                   </div>
                 </div>
               </div>

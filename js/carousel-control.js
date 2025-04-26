@@ -1,5 +1,6 @@
 // JavaScript Document
-$('#sp-headphone').owlCarousel({
+$(window).on('load', function(){
+$('#sp-headphone, #sp-dap, #sp-cables,#sp-dac-amp,#sp-speaker,#sp-acess,#sp-hot-headphone').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -17,11 +18,14 @@ $('#sp-headphone').owlCarousel({
         }
     }
 })
-$('#sp-speaker').owlCarousel({
+//headphone JS
+$('#sp-hifiman,#sp-sony,#sp-sennheiser').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
 	autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
 	dots:false,
     responsive:{
         0:{
@@ -35,11 +39,14 @@ $('#sp-speaker').owlCarousel({
         }
     }
 })
-$('#sp-acess').owlCarousel({
+//dap JS
+$('#sp-astell').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
 	autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
 	dots:false,
     responsive:{
         0:{
@@ -53,13 +60,15 @@ $('#sp-acess').owlCarousel({
         }
     }
 })
-
-$('#sp-hifiman').owlCarousel({
+//cables JS
+$('#sp-briseaudio, #sp-wagnus, #sp-eletech').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-	autoplay:true,
-	dots:false,
+    autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -72,12 +81,15 @@ $('#sp-hifiman').owlCarousel({
         }
     }
 })
-$('#sp-marshall').owlCarousel({
+//dac-amp JS
+$('#sp-chord, #sp-ddhifi, #sp-ifi').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-	autoplay:true,
-	dots:false,
+    autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -90,12 +102,15 @@ $('#sp-marshall').owlCarousel({
         }
     }
 })
-$('#sp-sennheiser').owlCarousel({
+//accessories JS
+$('#sp-case').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-	autoplay:true,
-	dots:false,
+    autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -108,3 +123,4 @@ $('#sp-sennheiser').owlCarousel({
         }
     }
 })
+});

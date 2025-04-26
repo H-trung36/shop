@@ -3372,6 +3372,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
+
 ;(function($, window, document, undefined) {
 
 	var style = $('<support>').get(0).style,

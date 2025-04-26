@@ -2,225 +2,529 @@
 /* CSS Document */
 
 
-body{
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";color:white;font-size: 16px;margin: 0; background-color:black }
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+	margin: 0;
+	background-color: rgb(255, 255, 255)
+}
 
-.border-bot{
-	border-bottom: 2px dotted #C2C2C2
+.border-bot {
+	border-bottom: 2px #C2C2C2
 }
-.navbar .navbar-brand img{
-    width: 30%; height: auto;
+
+.navbar .navbar-brand img {
+	width: 50%;
+	height: auto;
 }
-.navbar .navbar-nav .nav-item .nav-link{
-	padding: 6px 20px;font-weight: 400;border-radius: 20px; color:white; font-size:22px;
+
+.navbar .navbar-nav .nav-item .nav-link {
+	padding: 4px 20px;
+	font-weight: 300;
+	border-radius: 20px;
+	color: white;
+	font-size: 22px;
 }
-.navbar .navbar-nav .nav-item .nav-link:hover{
-	background-color: #DCC69E;color: white
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	background-color: #3cb3b3;
+	color: white
 }
-.navbar .navbar-nav .nav-item .dropdown-menu{
-	background-color: #DCC69E;padding-bottom: 0;padding-top: 0
+
+.navbar .navbar-nav .nav-item .dropdown-menu {
+	background-color: #3cb3b3;
+	padding-bottom: 0;
+	padding-top: 0
 }
-.navbar .navbar-nav .nav-item .dropdown-menu li{
+
+.navbar .navbar-nav .nav-item .dropdown-menu li {
 	border-bottom: 1px dotted #ffffff
 }
-.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item{
-	color: white;transition: all 0.7s
-}
-.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
-	padding-left: 25px;background-color: burlywood
-}
-.navbar .navbar-toggler .navbar-toggler-icon{border-radius: 10px;text-decoration-color: black;color:black}
-@media (max-width:667px){
-	.navbar .navbar-nav .nav-item .nav-link{
-		text-align: center
-	}
-	footer{text-align: center}
 
-	.navbar .navbar-nav .nav-item .dropdown-menu{
-	width: 200px;margin: 0 auto
-	}
-	.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item{
-		text-align: center
-	}
-   footer .row .container p{text-align: center; display: flex;justify-content: center;align-items: center}
-    footer .bg-black .text-white .col-lg-3 .p-3 p{display: flex; justify-content: center;align-items: center}
-}
-#banner .banner-l .carousel-inner .d-block .w-100{
-padding-top:2000px    }
-#banner .banner-r{
-	position: relative; 
-}
-#banner .caption-r{
-	position: absolute;width: 100%;height: 100%;text-align: center;color: white;top: 35%;
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+	color: white;
+	transition: all 0.7s
 }
 
-#banner .cover{
-	position: absolute;width: 84%;height: 90%;background-color: rgba(0,0,0,0.9);left: 8%;top: 5%;color: white;padding: 15px;display: flex;flex-direction: column;justify-content: center;align-items: center;transform: scale(0) rotateY(360deg);transition: all 0.8s
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+	padding-left: 25px;
+	background-color: burlywood
 }
-#banner .banner-r:hover .cover{
-	transform: scale(1) rotateY(0deg)
+
+.navbar .d-flex .nav-link {
+	font-size: 24px;
+	color: white;
+	padding: 6px 10px;
 }
-.hinh{
-	position: relative;overflow: hidden
+
+.navbar .d-flex .nav-link:hover {
+	color: #3cb3b3;
+	/* Màu khi hover, giống các mục menu */
 }
-.social{
-	position: absolute;width: 80%;height: 45px;left: 10%;top: 110%;display: flex;justify-content: space-around;transition: all 1s
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+	border-radius: 10px;
+	text-decoration-color: black;
+	color: black
 }
-.social a{
-	width: 45px;height: 45px;border-radius: 50%;background-color: rgba(185,185,185,1.00);display: flex;justify-content: center;align-items: center;text-decoration: none;color: black
+
+@media (max-width:667px) {
+	.navbar .navbar-nav .nav-item .nav-link {
+		text-align: center
+	}
+
+	footer {
+		text-align: center
+	}
+
+	.navbar .navbar-nav .nav-item .dropdown-menu {
+		width: 200px;
+		margin: 0 auto
+	}
+
+	.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+		text-align: center
+	}
+
+	footer .row .container p {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+
+	footer .bg-black .text-white .col-lg-3 .p-3 p {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
 }
-.social a:hover{
-	background-color: darkred;color: white
+#product-banner .non-moving-img {
+	width: 100%;
+	height: 500px; /* Điều chỉnh kích thước theo ý muốn */
+	object-fit: cover; /* Đảm bảo ảnh không bị méo */
+	object-position: center; /* Căn giữa ảnh */
 }
-.hinh:hover .social{
+#Contact-banner .non-moving-img {
+	width: 100%;
+	height: 600px; /* Điều chỉnh kích thước theo ý muốn */
+	object-fit: cover; /* Đảm bảo ảnh không bị méo */
+	object-position: center; /* Căn giữa ảnh */
+}
+#banner {
+	width: 100%;
+	/* Toàn chiều rộng */
+	margin-top: 56px;
+	/* Điều chỉnh cho navbar cố định */
+}
+
+/* Đảm bảo container-fluid kéo dài toàn chiều rộng */
+#banner .container-fluid {
+	width: 100%;
+	padding: 0;
+	/* Đã có trong CSS, giữ nguyên */
+	max-width: none;
+}
+
+#banner .row {
+	margin: 0;
+	/* Đã có trong CSS, giữ nguyên */
+	width: 100%;
+	padding: 0;
+	/* Xóa padding top và bottom */
+}
+
+/* Điều chỉnh phần carousel */
+#banner .banner-l {
+	padding: 0;
+	/* Xóa padding để kéo dài */
+}
+
+/* Đảm bảo hình ảnh trong carousel hiển thị đúng */
+#banner .banner-l .carousel-inner .d-block.w-100 {
+	padding-top: 0;
+	/* Xóa padding-top không cần thiết */
+	height: 500px;
+	/* Chiều cao cố định cho banner, giống 3KShop */
+	object-fit: cover;
+	/* Đảm bảo hình ảnh không bị méo */
+	object-position: center;
+	/* Căn giữa hình ảnh */
+}
+
+/* Xóa các kiểu không còn cần thiết liên quan đến banner bên phải */
+#banner .banner-r,
+#banner .caption-r,
+#banner .cover,
+#banner .banner-r:hover .cover {
+	display: none;
+	/* Ẩn các kiểu liên quan đến banner bên phải */
+}
+/* Cải thiện category navigation */
+#category-nav {
+	background-color: #f8f9fa;
+	position: sticky;
+	top: 56px; /* Để dưới navbar */
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Cải thiện các section sản phẩm */
+  .product-section {
+	padding: 40px 0;
+	background-color: white;
+  }
+  
+  .product-section h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: #333;
+	margin-bottom: 15px;
+  }
+  
+  .product-section p i {
+	color: #666;
+	font-size: 1.1rem;
+  }
+  
+  /* Cải thiện card sản phẩm */
+  .item {
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+	transition: transform 0.3s ease;
+  }
+  
+  .item:hover {
+	transform: translateY(-5px);
+  }
+  
+  .product-price {
+	background-color: #292828;
+	color: white;
+	padding: 10px 15px;
+	font-size: 1.2rem;
+	font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+	.product-section h1 {
+	  font-size: 2rem;
+	}
+	
+	#category-nav .d-flex {
+	  justify-content: center;
+	}
+	
+	.see-all-btn {
+	  font-size: 1rem;
+	  padding: 5px 15px;
+	}
+  }
+#category-nav .category-btn {
+	font-size: 0.9rem;
+	padding: 5px 15px;
+	border: 1px solid black;
+	color: black;
+	background-color: transparent;
+	transition: all 0.3s ease;
+  }
+  
+  #category-nav .category-btn:hover {
+	background-color: #3cb3b3; /* Màu nền khi hover, khớp với thiết kế của bạn */
+	color: white;
+	border-color: #3cb3b3;
+  }
+  
+  #category-nav .category-btn.active {
+	background-color: #3cb3b3; /* Màu nền cho nút active */
+	color: white;
+	border-color: #3cb3b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767px) {
+	#category-nav .category-btn {
+	  font-size: 0.8rem;
+	  padding: 3px 10px;
+	}
+  }
+.see-all-btn {
+	background-color: #f5f5f5;
+	color: rgb(0, 0, 0);
+	border-radius: 20px;
+	padding: 5px 20px;
+	font-size: 20px;
+	border:1px solid #000000;
+}
+.hinh {
+    position: relative;
+    overflow: hidden;
+}
+
+.social {
+    position: absolute;
+    width: 80%;
+    height: 45px;
+    left: 10%;
+    top: 50%; /* Giữ cố định ở giữa */
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    display: flex;
+    justify-content: space-around;
+    opacity: 0; /* Ẩn ban đầu */
+    transition: opacity 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+.hinh:hover .social {
+    opacity: 1; /* Hiển thị khi hover */
+}
+.social a {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: rgba(185, 185, 185, 1.00);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: black
+}
+
+.social a:hover {
+	background-color: darkred;
+	color: white
+}
+
+.hinh:hover .social {
 	top: 50%
 }
-#sp-headphone .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-headphone .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
+
+#explorer .content {
+	width: 100%;
+	height: 100%;
+	background-color: #DADADA;
+	padding: 15px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#sp-headphone .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-headphone .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-headphone .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; }
-
-#sp-speaker .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-speaker .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
+.box-cha {
+	position: relative;
+	overflow: hidden
 }
 
-#sp-speaker .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-speaker .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-speaker .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; }
-
-#sp-acess .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-acess .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
+.social-icon {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.80);
+	left: 0;
+	top: 100%;
+	padding: 15px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	transition: all 1s
 }
 
-#sp-acess .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-acess .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-acess .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; }
-#explorer .content{
-	width: 100%;height: 100%;background-color: #DADADA;padding: 15px;text-align: center;display: flex;flex-direction: column;justify-content: center;
+.social-icon a {
+	color: white;
+	direction: collumn;
 }
-.box-cha{
-	position: relative;overflow: hidden
-}
-.social-icon{
-	position: absolute;width: 100%;height: 100%;background-color: rgba(0,0,0,0.80);left: 0;top: 100%;padding: 15px;color: white;display: flex;flex-direction: column;justify-content: flex-end;transition: all 1s
-}
-.social-icon a{
-	color: white; direction: collumn;
-}
-.social-icon a:hover{
+
+.social-icon a:hover {
 	color: red
 }
-.box-cha:hover .social-icon{
+
+.box-cha:hover .social-icon {
 	top: 0
 }
-@media (max-width:667px){
-	.social-icon{
+
+@media (max-width:667px) {
+	.social-icon {
 		display: none;
 	}
 }
-#pageheader{
-	width: 100%;min-height: 300px;background: url( "../images/3K IMG/about banner.png");background-repeat: no-repeat;background-size: cover;background-position: center top;display: flex;justify-content: center;align-items: center
+
+.product-price {
+	width: 85%;
+	height: 30%;
+	background-color: #292828;
+	padding: 5px;
+	text-align: left;
+	display: flex;
+	flex-direction:
+		column;
+	justify-content: center;
+	color: white;
+	font-size: 20px;
 }
-#pageheader .caption{
-    color: white;}
-#pageheader h1{ padding-left: 160px}    
-.about-icon{
-	width: 100%;height: 45px;
+
+#pageheader {
+	width: 100%;
+	min-height: 300px;
+	background: url("../images/3K IMG/about banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	justify-content: center;
+	align-items: center
 }
-.about-icon .box{
-	height: 45px;width: 45px;background-color: #dcc89e;border-radius: 50%;display: flex;justify-content: center;align-items: center;margin-right: 20px
+
+#pageheader .caption {
+	color: white;
 }
-.about-icon .box a{
-	color: white;font-size:26px;}
-.about-icon .box:hover{
+
+#pageheader h1 {
+	padding-left: 160px
+}
+
+.about-icon {
+	width: 100%;
+	height: 45px;
+}
+
+.about-icon .box {
+	height: 45px;
+	width: 45px;
+	background-color: #dcc89e;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px
+}
+
+.about-icon .box a {
+	color: white;
+	font-size: 26px;
+}
+
+.about-icon .box:hover {
 	background-color: greenyellow
 }
-.about-icon .box:hover a{
+
+.about-icon .box:hover a {
 	color: white
 }
 
-#sp-marshall .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-marshall .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
+
+#product-banner {
+	width: 100%;
+	min-height: 300px;
+	background: url("../images/3K IMG/about banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	justify-content: center;
+	align-items: center
 }
 
-#sp-marshall .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-marshall .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-marshall .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; }    
- 
-#sp-hifiman .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-hifiman .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
-}
 
-#sp-hifiman .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-hifiman .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-hifiman .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; }  
-
-#sp-sennheiser .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
-#sp-sennheiser .owl-nav [class*='owl-'] {
-	font-size:40px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #858585
-}
-
-#sp-sennheiser .owl-nav .owl-next{ position:absolute; right:-2%;}
-#sp-sennheiser .owl-nav .owl-prev{ position:absolute; left:-2%;}
-#sp-sennheiser .owl-nav [class*='owl-']:hover {
-      background:none;border: none;
-      color:black;
-      text-decoration: none; } 
-#product-banner{width: 100%;min-height: 300px;background: url( "../images/3K IMG/about banner.png");background-repeat: no-repeat;background-size: cover;background-position: center top;display: flex;justify-content: center;align-items: center}
-
-
-.team{
+.team {
 	position: relative
 }
-.team-cover{
-	position: absolute;width: 100%;height: 100%;background-color: rgba(0,0,0,0.70);left: 0;top: 0;display: flex;justify-content: center;align-items: center;transform: scale(0);transition: all 0.6s
+/* Định dạng chung cho tất cả carousel */
+.owl-carousel .owl-nav {
+	position: absolute;
+	top: 50%; /* Căn giữa theo chiều dọc */
+	transform: translateY(-50%); /* Đảm bảo căn giữa chính xác */
+	width: 100%; /* Kéo dài toàn chiều rộng carousel */
+	display: flex;
+	justify-content: space-between; /* Đặt nút ở hai bên */
+  }
+  
+  .owl-carousel .owl-nav [class*='owl-'] {
+	font-size: 50px !important; /* Kích thước lớn hơn */
+	color: #858585; /* Màu xám */
+	background: transparent; /* Không nền */
+	border: none; /* Không viền */
+	padding: 0 15px; /* Khoảng cách padding */
+	transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+  }
+  
+  .owl-carousel .owl-nav [class*='owl-']:hover {
+	color: #000; /* Màu đen khi hover */
+	background: none;
+	text-decoration: none;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev {
+	left: -30px; /* Đặt nút trái cách mép trái 30px */
+  }
+  
+  .owl-carousel .owl-nav .owl-next {
+	right: -30px; /* Đặt nút phải cách mép phải 30px */
+  }
+.team-cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.70);
+	left: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+	transition: all 0.6s
 }
-.team-cover .icon{
-	width: 60%;height: 40px;display: flex;justify-content: space-between
+
+.team-cover .icon {
+	width: 60%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between
 }
-.team-cover .icon a{
-	height: 40px;width: 40px;background-color: white;border-radius: 50%;display: flex;justify-content: center;align-items: center;text-decoration: none;color: gray
+
+.team-cover .icon a {
+	height: 40px;
+	width: 40px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: gray
 }
-.team-cover .icon a:hover{
-	background-color: black;color: white
-}
-.team:hover .team-cover{
-	transform: scale(1)
-}
-main{
-	width: 100%;min-height: 800px
-}
-footer .nav .nav-item .nav-link{
+
+.team-cover .icon a:hover {
+	background-color: black;
 	color: white
 }
-footer .nav .nav-item .nav-link:hover{
+
+.team:hover .team-cover {
+	transform: scale(1)
+}
+
+main {
+	width: 100%;
+	min-height: 800px
+}
+
+footer .nav .nav-item .nav-link {
+	color: white
+}
+
+footer .nav .nav-item .nav-link:hover {
 	color: #Dcc69e;
-}footer .container img{
-width:40%; height: auto; padding-left: 12px;}
-#footer .container .row p{font-size:26px; padding-left: 12px;
-    
-    
-    
+}
+
+footer .container img {
+	width: 40%;
+	height: auto;
+	padding-left: 12px;
+}
+
+#footer .container .row p {
+	font-size: 26px;
+	padding-left: 12px;
