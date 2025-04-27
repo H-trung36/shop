@@ -40,7 +40,7 @@ $('#sp-hifiman,#sp-sony,#sp-sennheiser').owlCarousel({
     }
 })
 //dap JS
-$('#sp-astell').owlCarousel({
+$('#sp-astell, #sp-fiio').owlCarousel({
     loop:true,
     margin:10,
     nav:true,

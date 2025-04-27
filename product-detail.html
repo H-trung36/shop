@@ -178,144 +178,623 @@
   <script>
     // Hard-coded product data to avoid having to load from external JSON file
     const productsData = {
-      "headphone": [
-        {
-          "id": "hd800s",
-          "name": "Sennheiser HD 800 S",
-          "brand": "SENNHEISER",
-          "price": 39999000,
-          "images": [
-            "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-1.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-2.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-3.jpg"
-          ],
-          "warranty": "24 tháng",
-          "specifications": [
-            "Tai nghe Over-ear cao cấp với thiết kế Open-back",
-            "Đi kèm 2 dây tháo rời đầu cắm 6.3mm và 4.4mm",
-            "Driver: 56mm Ring Radiator Dynamic",
-            "Trở kháng: 300 Ω",
-            "Độ nhạy: 102 dB (1 V)",
-            "Tần số đáp ứng: 4 Hz - 51,000 Hz",
-            "Trọng lượng: 330 g",
-            "Sản xuất tại Ireland"
-          ],
-          "description": "<p>HD 800 S là tai nghe flagship của Sennheiser, kế thừa những đặc tính của HD 800 và cải tiến hơn nữa về chi tiết âm thanh. Với công nghệ hấp thụ sóng âm độc quyền hạn chế hiện tượng cộng hưởng tần số cao, HD 800 S mang đến trải nghiệm nghe nhạc đỉnh cao.</p><p>Thiết kế open-back mang đến không gian âm thanh rộng mở, driver Ring Radiator 56mm độc quyền cho độ chi tiết cao và khả năng tái tạo dải tần số cực rộng từ 4Hz - 51kHz.</p>"
-        },
-        {
-          "id": "ie600",
-          "name": "Sennheiser IE 600",
-          "brand": "SENNHEISER",
-          "price": 16990000,
-          "images": [
-            "./images/3K IMG/HEADPHONE/Sennheiser/ie600-1.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/ie600-2.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/ie600-3.jpg"
-          ],
-          "warranty": "24 tháng",
-          "specifications": [
-            "Tai nghe In-ear Monitor cao cấp",
-            "Driver: 7mm True Response Transducer Dynamic",
-            "Trở kháng: 18 Ω",
-            "Độ nhạy: 118 dB (1 kHz, 1 Vrms)",
-            "Tần số đáp ứng: 4 Hz - 46,500 Hz",
-            "Trọng lượng: 6 g (không dây)",
-            "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
-            "Vỏ kim loại AMORF ZR01 in 3D"
-          ]
-        },
-        {
-          "id": "MMT Wireless",
-          "name": "Sennheiser Momentum Wireless",
-          "brand": "SENNHEISER",
-          "price": 10990000,
-          "images": [
-            "./images/3K IMG/HEADPHONE/Sennheiser/MW1.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/MW2.jpg",
-            "./images/3K IMG/HEADPHONE/Sennheiser/MW3.jpg"
-          ],
-          "warranty": "24 tháng",
-          "specifications": [
-            "Bluetooth: 5.0",
-            "Codec: SBC, AAC, aptX, aptX HD, aptX LL",
-            "Thời lượng pin: ~17h",
-            "Chống ồn chủ động",
-            "Kết nối 2 thiết bị cùng lúc nhờ tính năng Multipoint",
-            "Headband và earpad được bọc da thật",
-            "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
-            "Vỏ kim loại AMORF ZR01 in 3D"
-          ]
-        }
+  "headphone": [
+  {
+      "id": "MDR-Z1R",
+      "name": "SONY MDR Z1R",
+      "brand": "SONY",
+      "price": 6000000,
+      "images": [
+        "./images/3K IMG/HEADPHONE/SONY/mz1r1.jpg",
+        "./images/3K IMG/HEADPHONE/SONY/mz1r2.jpg",
+        "./images/3K IMG/HEADPHONE/SONY/mz1r3.jpg.jpg"
       ],
-      "dap": [
-        {
-          "id": "sp2000t",
-          "name": "Astell&Kern SP2000T",
-          "brand": "ASTELL&KERN",
-          "price": 57990000,
-          "images": [
-            "./img/products/dap/sp2000t-1.jpg",
-            "./img/products/dap/sp2000t-2.jpg",
-            "./img/products/dap/sp2000t-3.jpg"
-          ],
-          "warranty": "12 tháng",
-          "specifications": [
-            "Màn hình cảm ứng 5.0 inch HD",
-            "Chip DAC: ESS ES9068AS Quad",
-            "Âm ly headphone: Dual Amp (Class A & Tube)",
-            "Bộ nhớ trong: 256GB (mở rộng microSD tới 1TB)",
-            "Pin: 4,200mAh, phát nhạc liên tục đến 9 giờ",
-            "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD)",
-            "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
-            "Công suất đầu ra: 6Vrms (balanced), 3Vrms (unbalanced)",
-            "Trọng lượng: 309g"
-          ]
-        },
-        {
-          "id": "m11plus",
-          "name": "FiiO M11 Plus",
-          "brand": "FIIO",
-          "price": 17990000,
-          "images": [
-            "./img/products/dap/m11plus-1.jpg",
-            "./img/products/dap/m11plus-2.jpg"
-          ],
-          "warranty": "12 tháng",
-          "specifications": [
-            "Màn hình cảm ứng 5.5 inch HD",
-            "Chip DAC: ESS ES9068AS",
-            "Hệ điều hành: Android 10",
-            "Bộ nhớ trong: 64GB (mở rộng microSD tới 2TB)",
-            "Pin: 6000mAh, phát nhạc liên tục đến 14 giờ",
-            "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
-            "Cổng ra: 2.5mm balanced, 3.5mm unbalanced, 4.4mm balanced",
-            "Trọng lượng: 286g"
-          ]
-        }
+      "warranty": "24 tháng",
+      "specifications": [
+        "Tai nghe Over-ear cao cấp với thiết kế Open-back",
+        "Đi kèm 2 dây tháo rời đầu cắm 6.3mm và 4.4mm",
+        "Driver: 56mm Ring Radiator Dynamic",
+        "Trở kháng: 300 Ω",
+        "Độ nhạy: 102 dB (1 V)",
+        "Tần số đáp ứng: 4 Hz - 51,000 Hz",
+        "Trọng lượng: 330 g",
+        "Sản xuất tại Ireland"
       ],
-      "cable": [
-        {
-          "id": "sw22",
-          "name": "Effect Audio Symphony Wire 22",
-          "brand": "EFFECT AUDIO",
-          "price": 8990000,
-          "images": [
-            "./img/products/cable/sw22-1.jpg",
-            "./img/products/cable/sw22-2.jpg"
-          ],
-          "warranty": "12 tháng",
-          "specifications": [
-            "Cáp nâng cấp cho tai nghe In-ear Monitor",
-            "Chất liệu: Silver-Gold Alloy (UP-OCC)",
-            "Cấu trúc: 24AWG, 4-wire",
-            "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
-            "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
-            "Chiều dài: 1.2m"
-          ]
-        }
+      "description": "<p>HD 800 S là tai nghe flagship của Sennheiser, kế thừa những đặc tính của HD 800 và cải tiến hơn nữa về chi tiết âm thanh. Với công nghệ hấp thụ sóng âm độc quyền hạn chế hiện tượng cộng hưởng tần số cao, HD 800 S mang đến trải nghiệm nghe nhạc đỉnh cao.</p><p>Thiết kế open-back mang đến không gian âm thanh rộng mở, driver Ring Radiator 56mm độc quyền cho độ chi tiết cao và khả năng tái tạo dải tần số cực rộng từ 4Hz - 51kHz.</p>"
+    },
+    {
+      "id": "hd800s",
+      "name": "Sennheiser HD 800 S",
+      "brand": "SENNHEISER",
+      "price": 39999000,
+      "images": [
+        "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-1.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-2.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/HD800S-3.jpg"
+      ],
+      "warranty": "24 tháng",
+      "specifications": [
+        "Tai nghe Over-ear cao cấp với thiết kế Open-back",
+        "Đi kèm 2 dây tháo rời đầu cắm 6.3mm và 4.4mm",
+        "Driver: 56mm Ring Radiator Dynamic",
+        "Trở kháng: 300 Ω",
+        "Độ nhạy: 102 dB (1 V)",
+        "Tần số đáp ứng: 4 Hz - 51,000 Hz",
+        "Trọng lượng: 330 g",
+        "Sản xuất tại Ireland"
+      ],
+      "description": "<p>HD 800 S là tai nghe flagship của Sennheiser, kế thừa những đặc tính của HD 800 và cải tiến hơn nữa về chi tiết âm thanh. Với công nghệ hấp thụ sóng âm độc quyền hạn chế hiện tượng cộng hưởng tần số cao, HD 800 S mang đến trải nghiệm nghe nhạc đỉnh cao.</p><p>Thiết kế open-back mang đến không gian âm thanh rộng mở, driver Ring Radiator 56mm độc quyền cho độ chi tiết cao và khả năng tái tạo dải tần số cực rộng từ 4Hz - 51kHz.</p>"
+    },
+    {
+      "id": "ie600",
+      "name": "Sennheiser IE 600",
+      "brand": "SENNHEISER",
+      "price": 16990000,
+      "images": [
+        "./images/3K IMG/HEADPHONE/Sennheiser/ie600-1.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/ie600-2.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/ie600-3.jpg"
+      ],
+      "warranty": "24 tháng",
+      "specifications": [
+        "Tai nghe In-ear Monitor cao cấp",
+        "Driver: 7mm True Response Transducer Dynamic",
+        "Trở kháng: 18 Ω",
+        "Độ nhạy: 118 dB (1 kHz, 1 Vrms)",
+        "Tần số đáp ứng: 4 Hz - 46,500 Hz",
+        "Trọng lượng: 6 g (không dây)",
+        "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
+        "Vỏ kim loại AMORF ZR01 in 3D"
       ]
-    };
+    },
+    {
+      "id": "MMT Wireless",
+      "name": "Sennheiser Momentum Wireless",
+      "brand": "SENNHEISER",
+      "price": 10990000,
+      "images": [
+        "./images/3K IMG/HEADPHONE/Sennheiser/MW1.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/MW2.jpg",
+        "./images/3K IMG/HEADPHONE/Sennheiser/MW3.jpg"
+      ],
+      "warranty": "24 tháng",
+      "specifications": [
+        "Bluetooth: 5.0",
+        "Codec: SBC, AAC, aptX, aptX HD, aptX LL",
+        "Thời lượng pin: ~17h",
+        "Chống ồn chủ động",
+        "Kết nối 2 thiết bị cùng lúc nhờ tính năng Multipoint",
+        "Headband và earpad được bọc da thật",
+        "Đi kèm 3 dây cáp (3.5mm, 4.4mm, 2.5mm)",
+        "Vỏ kim loại AMORF ZR01 in 3D"
+      ]
+    }
+  ],
 
+
+  "dap": [
+  {
+    "id": "m23",
+    "name": "FiiO M23",
+    "brand": "FIIO",
+    "price": 3000000,
+    "images": [
+      "./images/3K IMG/Dap/FiiO/m231.png",
+      "./images/3K IMG/Dap/FiiO/m232.png",
+      "./images/3K IMG/Dap/FiiO/m233.png"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.5 inch HD",
+      "Chip DAC: ESS ES9038PRO",
+      "Hệ điều hành: Android 10",
+      "Bộ nhớ trong: 64GB (mở rộng microSD tới 2TB)",
+      "Pin: 5,500mAh, phát nhạc liên tục đến 10 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Trọng lượng: 295g"
+    ],
+    "description": "<p>FiiO M23 là một DAP tầm trung mạnh mẽ từ FiiO, mang đến chất lượng âm thanh cao cấp với chip DAC ESS ES9038PRO. Sản phẩm phù hợp cho những người yêu âm nhạc muốn trải nghiệm âm thanh chi tiết và sống động.</p><p>Với thiết kế hiện đại, màn hình cảm ứng 5.5 inch và hỗ trợ Bluetooth 5.0 (LDAC, aptX HD), M23 mang lại sự tiện lợi và hiệu suất vượt trội trong phân khúc giá.</p>"
+  },
+  {
+    "id": "m15s",
+    "name": "FiiO M15S",
+    "brand": "FIIO",
+    "price": 2000000,
+    "images": [
+      "./images/3K IMG/Dap/FiiO/m15s1.png",
+      "./images/3K IMG/Dap/FiiO/m15s2.png",
+      "./images/3K IMG/Dap/FiiO/m15s3.png"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.5 inch HD",
+      "Chip DAC: ESS ES9038PRO",
+      "Hệ điều hành: Android 10",
+      "Bộ nhớ trong: 64GB (mở rộng microSD tới 2TB)",
+      "Pin: 6,200mAh, phát nhạc liên tục đến 15 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Trọng lượng: 345g"
+    ],
+    "description": "<p>FiiO M15S là một DAP hiệu suất cao với thiết kế sang trọng, tích hợp chip DAC ESS ES9038PRO cho âm thanh sắc nét và trung thực. Đây là lựa chọn lý tưởng cho audiophile muốn sở hữu thiết bị chất lượng với mức giá hợp lý.</p><p>M15S hỗ trợ Android 10, màn hình 5.5 inch và thời lượng pin ấn tượng lên đến 15 giờ, đáp ứng mọi nhu cầu nghe nhạc di động.</p>"
+  },
+  {
+    "id": "m3k",
+    "name": "FiiO M3K",
+    "brand": "FIIO",
+    "price": 1200000,
+    "images": [
+      "./images/3K IMG/Dap/FiiO/m3k1.png",
+      "./images/3K IMG/Dap/FiiO/m3k2.png",
+      "./images/3K IMG/Dap/FiiO/m3k3.png"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình 2.0 inch",
+      "Chip DAC: AKM AK4376A",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 512MB (mở rộng microSD tới 2TB)",
+      "Pin: 1,100mAh, phát nhạc liên tục đến 26 giờ",
+      "Kết nối: Bluetooth 4.2 (SBC)",
+      "Cổng ra: 3.5mm unbalanced",
+      "Trọng lượng: 76g"
+    ],
+    "description": "<p>FiiO M3K là DAP nhỏ gọn và giá rẻ, lý tưởng cho người dùng mới bắt đầu khám phá âm thanh chất lượng cao. Được trang bị chip DAC AKM AK4376A, M3K mang đến âm thanh rõ ràng và chi tiết.</p><p>Thiết kế nhẹ (chỉ 76g), thời lượng pin dài 26 giờ và hỗ trợ thẻ microSD lên đến 2TB khiến M3K trở thành bạn đồng hành hoàn hảo cho nhu cầu nghe nhạc hàng ngày.</p>"
+  },
+  {
+    "id": "wm1am2",
+    "name": "Sony WM1AM2",
+    "brand": "SONY",
+    "price": 6000000,
+    "images": [
+      "./images/3K IMG/Dap/Sony/wm1am21.png",
+      "./images/3K IMG/Dap/Sony/wm1am22.png",
+      "./images/3K IMG/Dap/Sony/wm1am23.png"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.0 inch HD",
+      "Chip DAC: S-Master HX",
+      "Hệ điều hành: Android 11",
+      "Bộ nhớ trong: 128GB (mở rộng microSD tới 2TB)",
+      "Pin: 5,000mAh, phát nhạc liên tục đến 40 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, AAC, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Trọng lượng: 299g"
+    ],
+    "description": "<p>Sony WM1AM2 là một DAP cao cấp trong dòng Walkman, mang đến chất lượng âm thanh xuất sắc với công nghệ S-Master HX độc quyền của Sony. Sản phẩm hướng đến audiophile muốn trải nghiệm âm thanh tinh tế và mạnh mẽ.</p><p>Với hệ điều hành Android 11, màn hình 5.0 inch và thời lượng pin lên đến 40 giờ, WM1AM2 là lựa chọn hoàn hảo cho những chuyến đi dài hoặc nghe nhạc tại nhà.</p>"
+  },
+  {
+    "id": "wm1z",
+    "name": "Sony WM1Z",
+    "brand": "SONY",
+    "price": 64000000,
+    "images": [
+      "./images/3K IMG/Dap/Sony/wm1z1.jpg",
+      "./images/3K IMG/Dap/Sony/wm1z2.jpg",
+      "./images/3K IMG/Dap/Sony/wm1z3.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 4.0 inch",
+      "Chip DAC: S-Master HX",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 256GB (mở rộng microSD tới 2TB)",
+      "Pin: 5,000mAh, phát nhạc liên tục đến 30 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 4.2 (LDAC, AAC, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Trọng lượng: 455g"
+    ],
+    "description": "<p>Sony WM1Z là DAP flagship của Sony, nổi bật với thiết kế sang trọng và chất lượng âm thanh đỉnh cao nhờ công nghệ S-Master HX. Đây là lựa chọn hàng đầu cho audiophile khó tính nhất.</p><p>Với bộ nhớ trong 256GB, hỗ trợ microSD lên đến 2TB và thời lượng pin 30 giờ, WM1Z mang đến trải nghiệm nghe nhạc không giới hạn, từ nhạc lossless đến các định dạng âm thanh cao cấp.</p>"
+  },
+  {
+    "id": "wm1zmk2",
+    "name": "Sony WM1ZMK2",
+    "brand": "SONY",
+    "price": 74000000,
+    "images": [
+      "./images/3K IMG/Dap/Sony/wm1zmk212.jpeg",
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.0 inch HD",
+      "Chip DAC: S-Master HX",
+      "Hệ điều hành: Android 11",
+      "Bộ nhớ trong: 256GB (mở rộng microSD tới 2TB)",
+      "Pin: 5,000mAh, phát nhạc liên tục đến 40 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, AAC, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Trọng lượng: 490g"
+    ],
+    "description": "<p>Sony WM1ZMK2 là phiên bản nâng cấp của WM1Z, mang đến chất lượng âm thanh vượt trội với công nghệ S-Master HX và thiết kế tinh tế. Đây là DAP dành cho audiophile muốn sở hữu thiết bị cao cấp nhất.</p><p>Với hệ điều hành Android 11, màn hình 5.0 inch và thời lượng pin 40 giờ, WM1ZMK2 đảm bảo trải nghiệm nghe nhạc đỉnh cao với mọi định dạng âm thanh, từ DSD đến MQA.</p>"
+  },
+  {
+    "id": "a105",
+    "name": "Sony A105",
+    "brand": "SONY",
+    "price": 3000000,
+    "images": [
+      "./images/3K IMG/Dap/Sony/a1051.jpeg",
+      "./images/3K IMG/Dap/Sony/a1052.jpg",
+      "./images/3K IMG/Dap/Sony/a1053.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 3.6 inch",
+      "Chip DAC: S-Master HX",
+      "Hệ điều hành: Android 9",
+      "Bộ nhớ trong: 16GB (mở rộng microSD tới 2TB)",
+      "Pin: 2,600mAh, phát nhạc liên tục đến 26 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, AAC, SBC)",
+      "Cổng ra: 3.5mm unbalanced",
+      "Trọng lượng: 103g"
+    ],
+    "description": "<p>Sony A105 là DAP nhỏ gọn trong dòng Walkman, mang đến âm thanh chất lượng cao với công nghệ S-Master HX. Sản phẩm phù hợp cho người dùng muốn một thiết bị nghe nhạc di động tiện lợi.</p><p>Với trọng lượng chỉ 103g, màn hình cảm ứng 3.6 inch và thời lượng pin 26 giờ, A105 là lựa chọn lý tưởng cho những ai yêu âm nhạc và thường xuyên di chuyển.</p>"
+  },
+  {
+    "id": "sp1000ss",
+    "name": "Astell&Kern SP1000SS",
+    "brand": "ASTELL&KERN",
+    "price": 11999000,
+    "images": [
+      "./images/3K IMG/Dap/AK/sp1000ss1.jpg",
+      "./images/3K IMG/Dap/AK/sp1000ss2.jpg",
+      "./images/3K IMG/Dap/AK/sp1000ss3.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.0 inch HD",
+      "Chip DAC: AKM AK4497EQ Dual DAC",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 256GB (mở rộng microSD tới 1TB)",
+      "Pin: 3,700mAh, phát nhạc liên tục đến 12 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 4.1 (aptX HD, SBC)",
+      "Cổng ra: 2.5mm balanced, 3.5mm unbalanced",
+      "Công suất đầu ra: 4Vrms (balanced), 2Vrms (unbalanced)",
+      "Trọng lượng: 407g"
+    ],
+    "description": "<p>Astell&Kern SP1000SS là DAP cao cấp với thiết kế thép không gỉ sang trọng, mang đến âm thanh tinh khiết nhờ chip DAC AKM AK4497EQ Dual DAC. Đây là lựa chọn hoàn hảo cho audiophile yêu thích sự đẳng cấp.</p><p>Với bộ nhớ trong 256GB, hỗ trợ microSD lên đến 1TB và thời lượng pin 12 giờ, SP1000SS đảm bảo trải nghiệm nghe nhạc không gián đoạn với chất lượng âm thanh hàng đầu.</p>"
+  },
+  {
+    "id": "sp2000",
+    "name": "Astell&Kern SP2000",
+    "brand": "ASTELL&KERN",
+    "price": 21240000,
+    "images": [
+      "./images/3K IMG/Dap/AK/sp20001.jpg",
+      "./images/3K IMG/Dap/AK/sp20002.jpg",
+      "./images/3K IMG/Dap/AK/sp20003.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 5.0 inch HD",
+      "Chip DAC: AKM AK4499EQ Dual DAC",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 512GB (mở rộng microSD tới 1TB)",
+      "Pin: 3,700mAh, phát nhạc liên tục đến 8 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 4.2 (LDAC, aptX HD, SBC)",
+      "Cổng ra: 2.5mm balanced, 3.5mm unbalanced",
+      "Công suất đầu ra: 6Vrms (balanced), 3Vrms (unbalanced)",
+      "Trọng lượng: 393g"
+    ],
+    "description": "<p>Astell&Kern SP2000 là DAP hàng đầu với chip DAC AKM AK4499EQ Dual DAC, mang đến âm thanh chi tiết và tự nhiên. Sản phẩm dành cho audiophile muốn trải nghiệm âm thanh cao cấp nhất.</p><p>Với bộ nhớ trong 512GB, hỗ trợ microSD lên đến 1TB và công suất đầu ra mạnh mẽ (6Vrms balanced), SP2000 là lựa chọn lý tưởng để thưởng thức nhạc lossless và các định dạng âm thanh cao cấp.</p>"
+  },
+  {
+    "id": "sr15",
+    "name": "Astell&Kern SR15",
+    "brand": "ASTELL&KERN",
+    "price": 5000000,
+    "images": [
+      "./images/3K IMG/Dap/AK/sr151.jpg",
+      "./images/3K IMG/Dap/AK/sr152.jpg",
+      "./images/3K IMG/Dap/AK/sr153.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 3.3 inch",
+      "Chip DAC: Cirrus Logic CS43198 Dual DAC",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 64GB (mở rộng microSD tới 1TB)",
+      "Pin: 3,150mAh, phát nhạc liên tục đến 21 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 4.1 (aptX HD, SBC)",
+      "Cổng ra: 2.5mm balanced, 3.5mm unbalanced",
+      "Công suất đầu ra: 4Vrms (balanced), 2Vrms (unbalanced)",
+      "Trọng lượng: 154g"
+    ],
+    "description": "<p>Astell&Kern SR15 là DAP nhỏ gọn với chip DAC Cirrus Logic CS43198 Dual DAC, mang đến âm thanh cân bằng và chi tiết. Sản phẩm phù hợp cho người dùng muốn một thiết bị nghe nhạc cao cấp nhưng nhẹ nhàng.</p><p>Với trọng lượng chỉ 154g, thời lượng pin 21 giờ và hỗ trợ microSD lên đến 1TB, SR15 là lựa chọn hoàn hảo cho audiophile thường xuyên di chuyển.</p>"
+  },
+  {
+    "id": "kannkub",
+    "name": "Astell&Kern KannKub",
+    "brand": "ASTELL&KERN",
+    "price": 3000000,
+    "images": [
+      "./images/3K IMG/Dap/AK/Kannkub1.jpg",
+      "./images/3K IMG/Dap/AK/Kannkub2.jpg",
+      "./images/3K IMG/Dap/AK/Kannkub3.jpg"
+    ],
+    "warranty": "12 tháng",
+    "specifications": [
+      "Màn hình cảm ứng 4.1 inch HD",
+      "Chip DAC: ESS ES9038Q2M",
+      "Hệ điều hành: Custom OS",
+      "Bộ nhớ trong: 64GB (mở rộng microSD tới 1TB)",
+      "Pin: 5,000mAh, phát nhạc liên tục đến 11 giờ",
+      "Kết nối: Wi-Fi, Bluetooth 5.0 (LDAC, aptX HD, SBC)",
+      "Cổng ra: 3.5mm unbalanced, 4.4mm balanced",
+      "Công suất đầu ra: 12Vrms (balanced), 6Vrms (unbalanced)",
+      "Trọng lượng: 279g"
+    ],
+    "description": "<p>Astell&Kern KannKub là DAP mạnh mẽ với công suất đầu ra ấn tượng (12Vrms balanced), phù hợp cho tai nghe khó kéo. Sản phẩm mang đến âm thanh sống động nhờ chip DAC ESS ES9038Q2M.</p><p>Với màn hình 4.1 inch, thời lượng pin 11 giờ và thiết kế chắc chắn, KannKub là lựa chọn lý tưởng cho audiophile muốn trải nghiệm âm thanh mạnh mẽ mọi lúc mọi nơi.</p>"
+  }
+],
+
+
+
+  "cable": [
+    {
+      "id": "akagen",
+      "name": "Brise Akagen",
+      "brand": "BRISE",
+      "price": 12000000,
+      "images": [
+        "./images/3K IMG/Cables/Brise/akagen1.png",
+        "./images/3K IMG/Cables/Brise/akagen2.png",
+        "./images/3K IMG/Cables/Brise/akagen3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Copper (UP-OCC)",
+        "Cấu trúc: 22AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "asuha",
+      "name": "Brise Asuha",
+      "brand": "BRISE",
+      "price": 8000000,
+      "images": [
+        "./images/3K IMG/Cables/Brise/asuha1.jpg",
+        "./images/3K IMG/Cables/Brise/asuha2.jpg",
+        "./images/3K IMG/Cables/Brise/asuha3.jpg"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Silver-Plated Copper (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "naobi",
+      "name": "Brise Naobi",
+      "brand": "BRISE",
+      "price": 13200000,
+      "images": [
+        "./images/3K IMG/Cables/Brise/naobi1.png",
+        "./images/3K IMG/Cables/Brise/naobi2.png",
+        "./images/3K IMG/Cables/Brise/naobi3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Gold-Plated Copper (UP-OCC)",
+        "Cấu trúc: 22AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "yatono",
+      "name": "Brise Yatono",
+      "brand": "BRISE",
+      "price": 9000000,
+      "images": [
+        "./images/3K IMG/Cables/Brise/yatono1.jpg",
+        "./images/3K IMG/Cables/Brise/yatono2.webp",
+        "./images/3K IMG/Cables/Brise/yatono3.jpg"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Silver (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "azreal",
+      "name": "Eletech Azreal",
+      "brand": "ELETECH",
+      "price": 1240000,
+      "images": [
+        "./images/3K IMG/Cables/Eletech/azreal1.png",
+        "./images/3K IMG/Cables/Eletech/azreal2.png",
+        "./images/3K IMG/Cables/Eletech/azreal3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Silver-Copper Hybrid (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "euclid",
+      "name": "Eletech Euclid",
+      "brand": "ELETECH",
+      "price": 3999000,
+      "images": [
+        "./images/3K IMG/Cables/Eletech/euclid1.png",
+        "./images/3K IMG/Cables/Eletech/euclid2.png",
+        "./images/3K IMG/Cables/Eletech/euclid3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Silver-Copper Hybrid (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "odyssey",
+      "name": "Eletech Odyssey",
+      "brand": "ELETECH",
+      "price": 4999000,
+      "images": [
+        "./images/3K IMG/Cables/Eletech/odyssey1.png",
+        "./images/3K IMG/Cables/Eletech/odyssey2.png",
+        "./images/3K IMG/Cables/Eletech/odyssey3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Copper (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "sonet",
+      "name": "Eletech Sonet",
+      "brand": "ELETECH",
+      "price": 3000000,
+      "images": [
+        "./images/3K IMG/Cables/Eletech/sonet1.png",
+        "./images/3K IMG/Cables/Eletech/sonet2.png",
+        "./images/3K IMG/Cables/Eletech/sonet3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Silver-Plated Copper (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "frosty",
+      "name": "Wagnus Frosty Sheep",
+      "brand": "WAGNUS",
+      "price": 3000000,
+      "images": [
+        "./images/3K IMG/Cables/Wagnus/frosty1.png",
+        "./images/3K IMG/Cables/Wagnus/frosty2.png",
+        "./images/3K IMG/Cables/Wagnus/frosty3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Copper (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "lily",
+      "name": "Wagnus Lily",
+      "brand": "WAGNUS",
+      "price": 4000000,
+      "images": [
+        "./images/3K IMG/Cables/Wagnus/lily1.png",
+        "./images/3K IMG/Cables/Wagnus/lily2.png",
+        "./images/3K IMG/Cables/Wagnus/lily3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Silver-Plated Copper (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "nu3",
+      "name": "Wagnus Sheep Nu-3",
+      "brand": "WAGNUS",
+      "price": 14000000,
+      "images": [
+        "./images/3K IMG/Cables/Wagnus/nu31.avif",
+        "./images/3K IMG/Cables/Wagnus/nu32.avif",
+        "./images/3K IMG/Cables/Wagnus/nu33.avif"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Gold-Plated Copper (UP-OCC)",
+        "Cấu trúc: 22AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "nucleon",
+      "name": "Wagnus Nucleon",
+      "brand": "WAGNUS",
+      "price": 2000000,
+      "images": [
+        "./images/3K IMG/Cables/Wagnus/nucleon1.png",
+        "./images/3K IMG/Cables/Wagnus/nucleon2.png",
+        "./images/3K IMG/Cables/Wagnus/nucleon3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Silver (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    },
+    {
+      "id": "sonet",
+      "name": "Wagnus Sonet",
+      "brand": "WAGNUS",
+      "price": 4999000,
+      "images": [
+        "./images/3K IMG/Cables/Wagnus/sonet1.png",
+        "./images/3K IMG/Cables/Wagnus/sonet2.png",
+        "./images/3K IMG/Cables/Wagnus/sonet3.png"
+      ],
+      "warranty": "12 tháng",
+      "specifications": [
+        "Cáp nâng cấp cho tai nghe In-ear Monitor",
+        "Chất liệu: Pure Silver (UP-OCC)",
+        "Cấu trúc: 24AWG, 4-wire",
+        "Đầu nối: MMCX, 2-Pin, IPX, QDC (tùy chọn)",
+        "Jack cắm: 2.5mm, 3.5mm, 4.4mm (tùy chọn)",
+        "Chiều dài: 1.2m"
+      ]
+    }
+  ]
+}
     // Function to get URL parameters
     function getURLParameter(name) {
       const urlParams = new URLSearchParams(window.location.search);
@@ -465,22 +944,22 @@
           ? product.images[0] 
           : (product.image || './img/placeholder.jpg');
         
-        productCard.innerHTML = `
-          <div class="product-card">
-            <div class="product-image">
-              <img src="${productImage}" alt="${product.name}" class="img-fluid">
-              <div class="product-overlay">
-                <a href="product-detail.html?id=${product.id}&category=${category}" class="view-btn">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+          productCard.innerHTML = `
+            <div class="product-card">
+              <div class="product-image">
+                <img src="${productImage}" alt="${product.name}" class="img-fluid">
+                <div class="product-overlay">
+                  <a href="product-detail.html?id=${product.id}&category=${category}" class="view-btn">
+                    <i class="fas fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product-info">
+                <h5 class="product-title">${product.name}</h5>
+                <p class="product-price">${formatPrice(product.price)}đ</p>
               </div>
             </div>
-            <div class="product-info">
-              <h5 class="product-title">${product.name}</h5>
-              <p class="product-price">${formatPrice(product.price)}đ</p>
-            </div>
-          </div>
-        `;
+          `;  
         relatedContainer.appendChild(productCard);
       });
     }
