@@ -211,7 +211,7 @@ body {
   .product-price-in-detail {
 	background-color: #ffffff;
 	color: rgb(0, 0, 0);
-	font-size: 3rem;
+	font-size: 2.6rem;
 	font-weight:bolder
   }
   /* Responsive adjustments */
@@ -533,3 +533,4 @@ footer .container img {
 #footer .container .row p {
 	font-size: 26px;
 	padding-left: 12px;
+}
